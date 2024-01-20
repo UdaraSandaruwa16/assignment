@@ -64,7 +64,7 @@ function NavBar() {
 										: "text-white hover:text-white"
 								}  md:flex`}
 								to="/about"
-								onMouseOver={() => (setShow(true), setTarget("store"))}
+								onMouseOver={() => (setShow(true), setTarget("about"))}
 								onClick={() => setShow(false)}
 							>
 								About
@@ -76,7 +76,7 @@ function NavBar() {
 										: "text-white hover:text-white"
 								}  md:flex`}
 								to="/cases"
-								onMouseOver={() => (setTarget("Mac"), setShow(true))}
+								onMouseOver={() => (setTarget("cases"), setShow(true))}
 								onClick={() => setShow(false)}
 							>
 								Case Studies
@@ -88,7 +88,7 @@ function NavBar() {
 										: "text-white hover:text-white "
 								} md:flex`}
 								to="/services"
-								onMouseOver={() => (setShow(true), setTarget("ipad"))}
+								onMouseOver={() => (setShow(true), setTarget("services"))}
 								onClick={() => setShow(false)}
 							>
                                 Services
@@ -100,7 +100,7 @@ function NavBar() {
 										: "text-white hover:text-white"
 								}  md:flex`}
 								to="/contact"
-								onMouseOver={() => (setShow(true), setTarget("iphone"))}
+								onMouseOver={() => (setShow(true), setTarget("contact"))}
 								onClick={() => setShow(false)}
 							>
 								Contact
@@ -121,15 +121,15 @@ function NavBar() {
 								size={20}
 								tabIndex={0}
 								className="hidden cursor-pointer
-									font-[12px] hover:text-white"
+									font-[12px] text-white"
 							/>
 							<AiOutlineSearch
-								className=" cursor-pointer hover:text-white"
+								className=" cursor-pointer text-white"
 								size={20}
 								tabIndex={0}
 							/>
 							<BsBag
-								className="cursor-pointer text-[20px] hover:text-white md:text-[17px]"
+								className="cursor-pointer text-[20px] text-white md:text-[17px]"
 								tabIndex={0}
 							/>
 							<HiMenuAlt4

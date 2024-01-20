@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";
 import { HiMenuAlt4 } from "react-icons/hi";
-import { container, item } from "../animation";
+import { container, item } from "../animations";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ShowMore_Nav from "./ShowMore_Nav";
 import { useLocation } from "react-router-dom";
@@ -71,7 +71,7 @@ function MobileNav({
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 0.5, delay: 0.35 }}
-						className="scroll-hidden mx-auto flex h-full max-w-[950px] flex-col justify-center overflow-y-scroll pt-[50px] pb-[50px]"
+						className={`scroll-hidden mx-auto flex h-full max-w-[950px] flex-col justify-center overflow-y-scroll pt-[50px] pb-[50px] bg-black text-white`}
 					>
 						<AiOutlineClose
 							color="white"

@@ -7,7 +7,7 @@ interface showMoreProp {
 	ToggleLinks: () => JSX.Element | null;
 }
 
-function ShowMore_Nav({ showMobile, setExtraNav, ToggleLinks }: showMoreProp) {
+function ShowMore_Nav({ setExtraNav, ToggleLinks }: showMoreProp) {
 	return (
 		<ul>
 			<MdKeyboardArrowLeft

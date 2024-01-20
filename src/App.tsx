@@ -1,6 +1,5 @@
 import "./index.css";
-import homebg from "./assets/hero.jpg";
-import mobileHomeBg from "./assets/hero.jpg";
+import Hero from "./components/Hero"
 import iphoneBg from "./assets/right.jpg";
 import useResize from "./useResize";
 import TopAdd from "./components/TopAdd";
@@ -9,44 +8,25 @@ import ServicesGrid from "./components/ServicesGrid";
 import Footer from "./components/Footer";
 
 export default function App() {
-	const { size } = useResize();
+	useResize();
 
 	return (
 		<>
-			<main className="top-12">
+			<main className="top-12 ">
 				<TopAdd />
-				<div className="mx-auto max-w-[2500px]">
-				<section id="hero" className="shadow-2xl">
-					<div className="relative h-[90vh]">
-						<img
-							src={size >= 768 ? homebg : mobileHomeBg}
-							alt="Accounting"
-							className="h-full object-cover object-center"
-						/>
-						<div className="absolute top-[100px] left-0  w-full place-content-center text-center font-semibold ">
-							<div className="absol items-center justify-center h-[185px] relative bg-gray-600 bg-opacity-50 p-2 shadow-lg">
-								<div className="absolute top-[50px] left-0 grid w-full place-content-center text-center font-semibold">
-									<h1 className="text-4xl md:text-5xl lg:text-6xl text-[#06038D]">
-										KS International
-									</h1>
-									{""}
-									<p className="text-xl md:text-2xl lg:text-3xl font-normal text-white">
-										Accounting Services
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div className="mx-auto max-w-[1500px]">
+				<section id="hero" className=" shadow-2xl">
+					<Hero/>
 				</section>
-
-				<section id="about" className="p-5 shadow-2xl">
-  					<div className="grid grid-cols-1 md:grid-cols-2">
+	
+				<section id="about" className="p-5 shadow-2xl ">
+  					<div className="grid grid-cols-1 md:grid-cols-2  w-full max-w-[1500px] px-5 py-5">
     					{/* Left side */}
     						<div className="relative h-full">
 								<img
 									src={iphoneBg}
 									alt="Right"
-									className="h-full object-cover object-center"
+									className="h-full object-cover object-center rounded-md"
 								/>
 							</div>
 
@@ -64,12 +44,15 @@ export default function App() {
     						</div>
   					</div>
 				</section>
+
 				<section id="cases" className="p-5 shadow-2xl">
 					<CasesSwiper />
 				</section>
+
 				<section id="services" className="p-5 shadow-2xl">
 					<ServicesGrid/>
 				</section>
+				
 				<section id="contact"  className="p-5 shadow-2xl">
 					<Footer/>
 				</section>

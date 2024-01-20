@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
-import darkLogo from "../assets/logo-dark.svg";
+import logo from "../assets/logo.png";
+import darkLogo from "../assets/logo.png";
 import { motion } from "framer-motion";
 import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";

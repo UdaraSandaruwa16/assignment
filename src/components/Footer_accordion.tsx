@@ -67,7 +67,7 @@ function Footer_accordion() {
 					</p>
 				</div>
 				<div className="flex flex-col items-start justify-between pt-3">
-					<p className="text-md pb-3">Sri LAnka</p>
+					<p className="text-md pb-3">Sri Lanka</p>
 
 					<p className="text-[#6e6e73]">
 						Copyright © 2024 KS International. All rights reserved.

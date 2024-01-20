@@ -1,6 +1,6 @@
 import { useState } from "react";
-import logo from "../assets/logo.svg";
-import logoBlack from "../assets/logo-dark.svg";
+import logo from "../assets/logo.png";
+import logoBlack from "../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -53,7 +53,7 @@ function NavBar() {
 							<Link to="/" className="w-fit">
 								<img
 									src={headerWhite ? logoBlack : logo}
-									className="h-[20px] w-[20px]"
+									className="h-[45px] w-[45px]"
 									alt=""
 								/>
 							</Link>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import awradimg from "../assets/award.jpg";
 
 function Footer_RegularTexts() {
 	return (
@@ -10,131 +11,87 @@ function Footer_RegularTexts() {
 							<span className="text-[#1d1d1f]">Contact US</span>
 						</h3>
 						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/giftcards"}>
-								Gi
+							<Link className="hover:underline" to={"/"}>
+								test@gmail.com
 							</Link>
-						</ul>
-					</div>
-					<div>
-						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">Apple Wallet</span>
-						</h3>
-						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/Applecash"}>
-								Apple Cash
-							</Link>
+							<li>Mobile : 077 777 7777</li>
+							<li>Address : Colombo 7</li>
 						</ul>
 					</div>
 				</div>
 				<div className="flex flex-col gap-3">
 					<div>
 						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">Account</span>
+							<span className="text-[#1d1d1f]">Services</span>
 						</h3>
 						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/iCloud"}>
-								iCloud.com
+							<Link className="hover:underline" to={"/"}>
+								Book keeping
 							</Link>
-						</ul>
-					</div>
-					<div>
-						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">Entertainment</span>
-						</h3>
-						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/applestore"}>
-								Apple Store
+							<Link className="hover:underline" to={"/"}>
+								Payroll
+							</Link>
+							<Link className="hover:underline" to={"/"}>
+								Tax Consultation
+							</Link>
+							<Link className="hover:underline" to={"/"}>
+								Advisory
+							</Link>
+							<Link className="hover:underline" to={"/"}>
+								Budgeting
+							</Link>
+							<Link className="hover:underline" to={"/"}>
+								Forcasting
 							</Link>
 						</ul>
 					</div>
 				</div>
 				<div>
 					<h3 className="mb-2 mt-4 text-[12px] font-medium">
-						<span className="text-[#1d1d1f]">Apple Store</span>
+						<span className="text-[#1d1d1f]">Case Studies</span>
 					</h3>
 					<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-						<Link className="hover:underline" to={"/shoppinghelp"}>
-							Shopping Help
+						<Link className="hover:underline" to={"/"}>
+							Fontera
+						</Link>
+						<Link className="hover:underline" to={"/"}>
+							Sandamadala Products
 						</Link>
 					</ul>
 				</div>
 				<div>
 					<div>
 						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">For Business</span>
+							<span className="text-[#1d1d1f]">Careers</span>
 						</h3>
 						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/shopforbusiness"}>
-								Shop for Business
-							</Link>
-						</ul>
-					</div>
-					<div>
-						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">For Education</span>
-						</h3>
-						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/shopforcollege"}>
-								Shop for College
-							</Link>
-						</ul>
-					</div>
-					<div>
-						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">For Healthcare</span>
-						</h3>
-						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/healthrecordsonphone"}>
-								Health Records on iPhone
-							</Link>
-						</ul>
-					</div>
-					<div>
-						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">For Government</span>
-						</h3>
-						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/veterans and Military"}>
-								Shop for Veterans and Military
+							<Link className="hover:underline" to={"/"}>
+								Join with us
 							</Link>
 						</ul>
 					</div>
 				</div>
 				<div className="flex flex-col gap-3">
 					<div>
-						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">Apple Values</span>
-						</h3>
-						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/supplierresponsibility"}>
-								Supplier Responsibility
-							</Link>
-						</ul>
-					</div>
-					<div>
-						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">About Apple</span>
-						</h3>
-						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
-							<Link className="hover:underline" to={"/contactapple"}>
-								Contact Apple
-							</Link>
-						</ul>
+						<img
+							alt=""
+							src={awradimg}
+							className="opacity-30 md:opacity-100 p-5 mx-auto lg:opacity-100 object-cover"
+						/>
 					</div>
 				</div>
 			</div>
 			<footer className="mt-10 text-[12px]">
 				<div className="my-hr">
 					<p className="pb-3 text-[#6e6e73]">
-						More ways to shop:
+						More ways to contact us :
 						<a className="px-1 text-apple-blue underline" href="#">
-							Find an Apple Store
+							Join our whatsapp
 						</a>
 						or
 						<a className="px-1 text-apple-blue underline" href="#">
-							other retailer
+							viber
 						</a>
-						near you.
 					</p>
 				</div>
 				<div className="flex justify-between">

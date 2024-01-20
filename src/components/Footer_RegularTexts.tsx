@@ -7,11 +7,11 @@ function Footer_RegularTexts() {
 				<div className="flex flex-col gap-3">
 					<div>
 						<h3 className="mb-2 mt-4 text-[12px] font-medium">
-							<span className="text-[#1d1d1f]">Shop and Learn</span>
+							<span className="text-[#1d1d1f]">Contact US</span>
 						</h3>
 						<ul className="flex flex-col justify-center gap-2 text-[12px] text-[#6e6e73]">
 							<Link className="hover:underline" to={"/giftcards"}>
-								Gift Cards
+								Gi
 							</Link>
 						</ul>
 					</div>

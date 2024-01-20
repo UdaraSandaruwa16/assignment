@@ -11,51 +11,45 @@ const contactUs = {
 	title: "Contact Us",
 };
 
-const entertainment = {
+const services = {
 	title: "Services",
 	links: [
 		"Book Keeping",
-		"Tax",
-		"Apple Music",
-		"Apple Arcade",
-		"Apple Fitness+",
-		"Apple News+",
-		"Apple Podcasts",
-		"Apple Books",
-		"Apple Store",
+		"Tax Consultation",
+		"Advisory",
+		"Payroll",
+		"Budgeting",
+		"Forcasting",
 	],
 };
-const appleStore = {
-	title: "Apple Store",
+const cases = {
+	title: "Case Studies",
 	links: [
-		"Find a Store",
-		"Genius Bar",
-		"Today at Apple",
-		"Apple Camp",
-		"Apple Store App",
-		"Certified Refurbished",
-		"Financing",
-		"Apple Trade In",
-		"Order Status",
-		"Shopping Help",
+		"Fontera",
+		"Sandamadala Products",
 	],
 };
-
+const careers = {
+	title: "Careers",
+	links: [
+		"Full-stack developer",
+		"Web-developer",
+	],
+};
 
 function Footer_accordion() {
 	return (
 		<div className="pt-2">
 			<div className="">
 				<div className="flex flex-col gap-3">
-					<FAQItem links={shopAndLearn.links} title={shopAndLearn.title} />
+					<FAQItem links={contactUs.links} title={contactUs.title} />
 					
 					<FAQItem
-						links={manageId.links}
-						title={manageId.title}
-						listHeight90={manageId.listHeight90}
+						links={services.links}
+						title={services.title}
 					/>
-					<FAQItem links={entertainment.links} title={entertainment.title} />
-					<FAQItem links={appleStore.links} title={appleStore.title} />
+					<FAQItem links={cases.links} title={cases.title} />
+					<FAQItem links={careers.links} title={careers.title} />
 				</div>
 			</div>
 			<footer className="mt-10 text-[12px]">

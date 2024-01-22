@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import darkLogo from "../assets/logo.png";
@@ -8,7 +8,6 @@ import { BsBag } from "react-icons/bs";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { container, item } from "../animations";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import ShowMore_Nav from "./ShowMore_Nav";
 import { useLocation } from "react-router-dom";
 
 interface mobileProp {
@@ -22,9 +21,7 @@ function MobileNav({
 	setTarget,
 	setShowMobile,
 	showMobile,
-	ToggleLinks,
 }: mobileProp) {
-	const [extraNav, setExtraNav] = useState(false);
 	const location = useLocation();
 	const headerWhite = location.pathname === "/store";
 
@@ -80,13 +77,7 @@ function MobileNav({
 							onClick={() => setShowMobile(false)}
 							className="absolute top-5 right-5 cursor-pointer font-[12px] hover:text-white"
 						/>
-						{extraNav ? (
-							<ShowMore_Nav
-								showMobile={showMobile}
-								setExtraNav={setExtraNav}
-								ToggleLinks={ToggleLinks}
-							/>
-						) : (
+						{
 							<motion.ul
 								variants={container}
 								initial="hidden"
@@ -97,7 +88,7 @@ function MobileNav({
 									variants={item}
 									tabIndex={0}
 									className=" hover:my-hover flex cursor-pointer items-center justify-between hover:text-white"
-									onClick={() => (setExtraNav(true), setTarget("about"))}
+									onClick={() => (setTarget("about"))}
 								>
 									About
 									<MdKeyboardArrowRight className="icon" color="white" />
@@ -107,7 +98,7 @@ function MobileNav({
 									variants={item}
 									tabIndex={1}
 									className="hover:my-hover flex cursor-pointer items-center justify-between hover:text-white"
-									onClick={() => (setExtraNav(true), setTarget("cases"))}
+									onClick={() => (setTarget("cases"))}
 								>
 									Case Studies
 									<MdKeyboardArrowRight className="icon" color="white" />
@@ -117,7 +108,7 @@ function MobileNav({
 									variants={item}
 									tabIndex={2}
 									className=" hover:my-hover flex cursor-pointer items-center justify-between hover:text-white"
-									onClick={() => (setExtraNav(true), setTarget("services"))}
+									onClick={() => (setTarget("services"))}
 								>
 									Services
 									<MdKeyboardArrowRight className="icon" color="white" />
@@ -127,13 +118,13 @@ function MobileNav({
 									variants={item}
 									tabIndex={3}
 									className=" hover:my-hover flex cursor-pointer items-center justify-between hover:text-white"
-									onClick={() => (setExtraNav(true), setTarget("contact"))}
+									onClick={() => (setTarget("contact"))}
 								>
 									Contact
 									<MdKeyboardArrowRight className="icon" color="white" />
 								</motion.p>
 							</motion.ul>
-						)}
+						}
 					</motion.nav>
 				)}
 			</div>

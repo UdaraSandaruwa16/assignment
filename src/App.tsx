@@ -1,6 +1,6 @@
 import "./index.css";
 import Hero from "./components/Hero"
-import iphoneBg from "./assets/right.jpg";
+import hero from "./assets/right.jpg";
 import useResize from "./useResize";
 import TopAdd from "./components/TopAdd";
 import CasesSwiper from "./components/CasesSwiper";
@@ -24,7 +24,7 @@ export default function App() {
     					{/* Left side */}
     						<div className="relative h-full">
 								<img
-									src={iphoneBg}
+									src={hero}
 									alt="Right"
 									className="h-full object-cover object-center rounded-md"
 								/>

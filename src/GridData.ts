@@ -9,37 +9,31 @@ export const gridData = [
 	{
 		img: book,
 		h1: "Book Keeping",
-		p: "Custom text",
 		white: false,
 	},
 	{
 		img: payroll,
 		h1: "Payroll",
-		p: "Custom text",
 		white: false,
 	},
 	{
 		img: advisory,
 		h1: "Advisory",
-		p: "Custom text",
 		white: false,
 	},
 	{
 		img: tax,
 		h1: "Tax consultation",
-		p: "Custom text",
 		white: false,
 	},
 	{
 		img: budget,
 		h1: "Budgeting",
-		p: "Custom text",
 		white: false,
 	},
 	{
 		img: forcast,
 		h1: "Forecasting",
-		p: "Custom text",
 		white: false,
 	},
 ];

@@ -1,11 +1,3 @@
-export type latestProps = {
-	name: string;
-	img: string;
-	para: string;
-	text: string;
-	white: boolean;
-}[];
-
 export interface titleProp {
 	h1: string;
 	span: string;
@@ -20,13 +12,6 @@ export type differenceProp = {
 	orange?: boolean;
 	name: string;
 }[];
-
-export type leadProp = {
-	title: string;
-	text: string;
-	img: string;
-}[];
-
 
 export interface defferenceDataProp {
 	difference: differenceProp;
@@ -46,10 +31,3 @@ export type headingProp = {
 	text: string;
 };
 
-export type experienceProp = {
-	span?: string;
-	h1: string;
-	p?: string;
-	img: string;
-	dark?: boolean;
-}[];

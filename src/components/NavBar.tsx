@@ -22,7 +22,7 @@ function NavBar() {
 	const [showMobile, setShowMobile] = useState(false);
 	const [target, setTarget] = useState<string | null>(null);
 	const location = useLocation();
-	const headerWhite = location.pathname === "/store";
+	const headerWhite = location.pathname === "/";
 
 	function ToggleLinks() {
 		return target === "About" ? (
@@ -63,7 +63,7 @@ function NavBar() {
 										? "text-dark hover:text-grayish"
 										: "text-white hover:text-white"
 								}  md:flex`}
-								to="/about"
+								to="/"
 								onMouseOver={() => (setShow(true), setTarget("about"))}
 								onClick={() => setShow(false)}
 							>
@@ -75,7 +75,7 @@ function NavBar() {
 										? "text-dark  hover:text-grayish"
 										: "text-white hover:text-white"
 								}  md:flex`}
-								to="/cases"
+								to="/"
 								onMouseOver={() => (setTarget("cases"), setShow(true))}
 								onClick={() => setShow(false)}
 							>
@@ -87,7 +87,7 @@ function NavBar() {
 										? "text-dark  hover:text-grayish"
 										: "text-white hover:text-white "
 								} md:flex`}
-								to="/services"
+								to="/"
 								onMouseOver={() => (setShow(true), setTarget("services"))}
 								onClick={() => setShow(false)}
 							>
@@ -99,7 +99,7 @@ function NavBar() {
 										? "text-dark  hover:text-grayish"
 										: "text-white hover:text-white"
 								}  md:flex`}
-								to="/contact"
+								to="/"
 								onMouseOver={() => (setShow(true), setTarget("contact"))}
 								onClick={() => setShow(false)}
 							>

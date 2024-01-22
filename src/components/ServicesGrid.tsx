@@ -1,4 +1,5 @@
 import { gridData } from "../GridData";
+
 function ServicesGrid() {
     return (
         <div className="grid grid-cols-1 gap-3 p-[10px] md:gap-4 md:p-[15px] lg:grid-cols-2">
